@@ -13,7 +13,7 @@ chef_version '>= 12.5' if respond_to?(:chef_version)
   supports os
 end
 
-depends 'ceph', '>= 0.9.2'
+# depends 'ceph', '>= 0.9.2'
 depends 'openstack-common', '>= 15.0.0'
 depends 'openstack-identity', '>= 15.0.0'
 depends 'openstack-image', '>= 15.0.0'
