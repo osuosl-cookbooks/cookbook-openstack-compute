@@ -29,7 +29,7 @@ recipe 'openstack-compute::vncproxy', 'Installs/Configures nova vnc proxy'
   supports os
 end
 
-depends 'ceph'
+# depends 'ceph'
 depends 'openstack-common', '>= 16.0.0'
 depends 'openstack-identity', '>= 16.0.0'
 depends 'openstack-image', '>= 16.0.0'
