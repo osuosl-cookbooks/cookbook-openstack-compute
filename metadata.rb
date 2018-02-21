@@ -12,7 +12,7 @@ version '14.1.0'
   supports os
 end
 
-depends 'ceph', '>= 0.9.2'
+# depends 'ceph', '>= 0.9.2'
 depends 'openstack-common', '>= 14.0.0'
 depends 'openstack-identity', '>= 14.0.0'
 depends 'openstack-image', '>= 14.0.0'
