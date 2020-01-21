@@ -59,10 +59,10 @@ bind_service = node['openstack']['bind_service']['all']['compute-metadata-api']
 apache_resource = find_resource(:apache2_install, 'openstack')
 
 if apache_resource
-  apache_resource.listen = [apache_resource.listen, bind_service['port']].flatten
+  apache_resource.listen = [apache_resource.listen, "#{bind_service['host']}:#{bind_service['port']}"].flatten
 else
   apache2_install 'openstack' do
-    listen bind_service['port']
+    listen "#{bind_service['host']}:#{bind_service['port']}"
   end
 end
 
