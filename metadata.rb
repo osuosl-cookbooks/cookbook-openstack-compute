@@ -6,8 +6,8 @@ source_url       'https://github.com/openstack/cookbook-openstack-compute' if re
 license          'Apache-2.0'
 description      'The OpenStack Compute service Nova.'
 version          '18.0.0'
+chef_version '>= 16.0'
 
-chef_version '>= 12.5' if respond_to?(:chef_version)
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 
 recipe 'openstack-compute::api-metadata', 'Installs/Configures nova api metadata service'
